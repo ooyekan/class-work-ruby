@@ -39,7 +39,7 @@
 
  grandTotal = subTotal + GST + PST
 
- puts "PST: $#{PST.round(2)} "
- puts "GST: $#{GST.round(2)} "
+ puts "PST: $#{PST.round(2)} - #{(PST/subTotal * 100).round} %"
+ puts "GST: $#{GST.round(2)} - #{(GST/subTotal * 100).round} %"
 
  puts "GRANDTOTAL: $#{grandTotal}"
