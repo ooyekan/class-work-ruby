@@ -43,3 +43,14 @@
  puts "GST: $#{GST.round(2)} - #{(GST/subTotal * 100).round} %"
 
  puts "GRANDTOTAL: $#{grandTotal}"
+
+ #If Statement
+ if (grandTotal <= 5.0)
+   message = 'Pocket Change'
+elsif (grandTotal > 5.0 and grandTotal < 20)
+   message = 'Wallet Time'
+else (grandTotal >= 20)
+   message = 'Charge it!'
+end
+
+puts "#{message}"
